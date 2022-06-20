@@ -119,14 +119,21 @@ header {
   }
 }
 
-//video
-.video {
-  text-align: center;
+//visual
+.visual {
+  position: relative;
+  background: url("./images/FBOE_bg.png") no-repeat;
+  background-size: 100% 100%;
+  height: 600px;
   margin-top: 100px;
 
-  video {
-    width: 100%;
-    height: 100%;
+  p {
+    font-size: 4vw;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    bottom: 38%;
+    right: 8%;
   }
 }
 
@@ -215,7 +222,7 @@ header {
 
           p {
             font-size: 20px;
-            font-weight:500;
+            font-weight: 500;
             color: #000;
           }
         }
@@ -297,8 +304,10 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 0 20px;
+
     .contact_text {
       width: 300px;
+
       >h2 {
         font-family: 'Secular One', sans-serif;
         font-size: 80px;
@@ -402,6 +411,7 @@ header {
 footer {
   background-color: #9a9af7;
   position: relative;
+
   .inner {
     padding: 40px 0 120px 0;
 
@@ -415,7 +425,7 @@ footer {
       left: 0;
     }
 
-    > p {
+    >p {
       position: absolute;
       bottom: 30px;
       right: 0;
@@ -492,14 +502,12 @@ footer {
     }
   }
 
-  //video
-  .video {
-    margin-top: 74px;
+  //visual
+  .visual {
+    height: 400px;
+    margin-top: 70px;
 
-    video {
-      width: 100%;
-      height: 100%;
-    }
+    p {}
   }
 
   // Vision
@@ -627,7 +635,7 @@ footer {
             p {
               max-width: 350px;
               font-size: 20px;
-              font-weight:500;
+              font-weight: 500;
             }
           }
 
@@ -708,10 +716,12 @@ footer {
       .contact_text {
         width: 300px;
         margin: auto;
+
         .text {
           display: none;
         }
       }
+
       .contact_text::before {
         display: none;
       }
@@ -767,16 +777,19 @@ footer {
   footer {
     background-color: #9a9af7;
     position: relative;
+
     .inner {
       padding: 10px 0 60px 0;
+
       .info {
         display: block;
-        position: absolute;
-        bottom: 20px;
-        left: 10px;
-        font-size: 12px;
+        bottom: 80px;
+        right: 10px;
+        p {
+          font-size: 13px;
+          font-weight: 500;
+        }
       }
-
       img {
         width: 30%;
         padding: 10px;
@@ -794,6 +807,14 @@ footer {
 }
 
 @media screen and (max-width: 426px) {
+
+  //visual
+  .visual {
+    height: 270px;
+    margin-top: 70px;
+
+    p {}
+  }
 
   // Vision
   .vision {
@@ -831,6 +852,37 @@ footer {
         .img:nth-of-type(1)>span {
           top: -30px;
         }
+      }
+    }
+  }
+
+  //footer
+  footer {
+    background-color: #9a9af7;
+    position: relative;
+
+    .inner {
+      padding: 20px 0 120px 0;
+
+      .info {
+        display: block;
+        color: #fff;
+        font-weight: 900;
+        line-height: 1.7;
+        position: absolute;
+        bottom: 80px;
+        left: 190px;
+        p {
+          width: 180px;
+        }
+      }
+
+      >p {
+        position: absolute;
+        bottom: 30px;
+        right: 5px;
+        font-size: 14px;
+        color: #fff;
       }
     }
   }

@@ -89,13 +89,20 @@ header > .inner .navbar .navbar__toogleBtn {
   color: #d49466;
 }
 
-.video {
-  text-align: center;
+.visual {
+  position: relative;
+  background: url("/FBOE_bg.8703f22b.png") no-repeat;
+  background-size: 100% 100%;
+  height: 600px;
   margin-top: 100px;
 }
-.video video {
-  width: 100%;
-  height: 100%;
+.visual p {
+  font-size: 4vw;
+  font-weight: 900;
+  color: #fff;
+  position: absolute;
+  bottom: 38%;
+  right: 8%;
 }
 
 .vision {
@@ -377,14 +384,10 @@ footer .inner > p {
     display: flex;
   }
 
-  .video {
-    margin-top: 74px;
+  .visual {
+    height: 400px;
+    margin-top: 70px;
   }
-  .video video {
-    width: 100%;
-    height: 100%;
-  }
-
   .vision {
     padding-top: 80px;
   }
@@ -588,10 +591,12 @@ footer .inner > p {
   }
   footer .inner .info {
     display: block;
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    font-size: 12px;
+    bottom: 80px;
+    right: 10px;
+  }
+  footer .inner .info p {
+    font-size: 13px;
+    font-weight: 500;
   }
   footer .inner img {
     width: 30%;
@@ -606,6 +611,10 @@ footer .inner > p {
   }
 }
 @media screen and (max-width: 426px) {
+  .visual {
+    height: 270px;
+    margin-top: 70px;
+  }
   .vision .large-inner .img-box {
     display: flex;
     flex-direction: column;
@@ -633,6 +642,33 @@ footer .inner > p {
   }
   .vision .large-inner .img-box .img:nth-of-type(1) > span {
     top: -30px;
+  }
+
+  footer {
+    background-color: #9a9af7;
+    position: relative;
+  }
+  footer .inner {
+    padding: 20px 0 120px 0;
+  }
+  footer .inner .info {
+    display: block;
+    color: #fff;
+    font-weight: 900;
+    line-height: 1.7;
+    position: absolute;
+    bottom: 80px;
+    left: 190px;
+  }
+  footer .inner .info p {
+    width: 180px;
+  }
+  footer .inner > p {
+    position: absolute;
+    bottom: 30px;
+    right: 5px;
+    font-size: 14px;
+    color: #fff;
   }
 }
 
